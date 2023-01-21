@@ -21,7 +21,7 @@ timezone:
 
 title: Gthvn1's blog                          # the main title
 
-tagline: interested in computer science   # it will display as the sub-title
+tagline: ... computer enthousiast   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   I'm interested in everything related to hypervisors and kernels.
