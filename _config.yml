@@ -78,7 +78,7 @@ theme_mode: light  # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/assets/images/bio-photo.jpg'
+avatar: '/assets/img/bio-photo.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -156,7 +156,7 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: assets/images/favicons
+      path: assets/img/favicons
     values:
       swcache: true
   - scope:
