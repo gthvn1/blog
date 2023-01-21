@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: ''
+baseurl: '/blog'
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -19,46 +19,43 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy                          # the main title
+title: Gthvn1's blog                          # the main title
 
 tagline: A text-focused Jekyll theme   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  I'm interested in everything related to hypervisors and kernels.
+  So let's talk about that...
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://gthvn1.github.io'
 
 github:
-  username: github_username             # change to your github username
-
-twitter:
-  username: twitter_username            # change to your twitter username
+  username: gthvn1
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com             # change to your email address
+  name: 9u1llØm3 7.
+  email: gthvn1@gmail.com
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    - https://github.com/gthvn1       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification:               # fill in to your verification string
+#google_site_verification:               # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics:
-  id:                 # fill in your Google Analytics ID
-  # Google Analytics pageviews report settings
-  pv:
-    proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
-    cache_path:       # the local PV cache data, friendly to visitors from GFW region
+#google_analytics:
+#  id:                 # fill in your Google Analytics ID
+#  # Google Analytics pageviews report settings
+#  pv:
+#    proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
+#    cache_path:       # the local PV cache data, friendly to visitors from GFW region
 
 # Prefer color scheme setting.
 #
@@ -71,7 +68,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:   # [light|dark]
+theme_mode: light  # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
