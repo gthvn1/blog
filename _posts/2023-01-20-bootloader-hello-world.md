@@ -15,7 +15,8 @@ finds a bootloader that is recognized with its magic number stored on the last t
 the 512 bytes it loads it at a known address (0x7C00) and the bootloader is executed. This piece
 of software is called the fist stage bootloader.
 
-You will find the classical [hello world bootloader](https://github.com/gthvn1/yet-another-kernel/blob/main/bootloader/boot.asm).
+You will find the classical
+[hello world bootloader](https://github.com/gthvn1/yet-another-kernel/blob/main/bootloader/hello-real-mode.asm)
 To build it you will need a compiler like **nasm**. The following command can be used:
 - `nasm boot.asm -f bin -o boot.bin`
 
