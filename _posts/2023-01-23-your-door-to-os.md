@@ -65,6 +65,13 @@ are set as expected:
 
 ```
 
+## Create a grub entry menu
+
+To be able to load our kernel from grub we need to create a grub menu. We will just give a
+name to our entry, the path to the kernel and the boot instruction. 
+This [configuration file](https://github.com/gthvn1/yet-another-kernel/blob/main/from_grub/grub.cfg)
+will be used to create an ISO image as explained in the next section. 
+
 ## Generating the ISO image
 
 To generate an image understandable by *grub* the easiest way is to generate a
