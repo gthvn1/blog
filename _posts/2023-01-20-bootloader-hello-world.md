@@ -4,6 +4,7 @@ categories:
   - Blog
 tags:
   - bootloader
+pin: true
 ---
 
 ## The Hello World bootloader
