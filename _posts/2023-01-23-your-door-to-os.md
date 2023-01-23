@@ -77,6 +77,18 @@ will be used to create an ISO image as explained in the next section.
 To generate an image understandable by *grub* the easiest way is to generate a
 rescue image using *grub-mkrescue*. It will generate a bootable ISO image.
 
+## Debugging
+
+As we see with *nm* the start address is 0x100020. So if you want to debug you can
+start qemu with **-s -S** options and run gbd like this:
+```sh
+# gdb -ex 'target remote localhost:1234' \
+      -ex 'set disassembly-flavor intel' \
+      -ex 'break *0x100020' \
+      -ex 'continue'
+
+```
+
 ## some links
 
 - [Linkder ld](https://sourceware.org/binutils/docs-2.40/ld.html)
