@@ -37,6 +37,6 @@ parts like setting the page table we will post dedicated blog posts...
 
 ## Links
 
-[OSdev - Zig bare bones](https://wiki.osdev.org/Zig_Bare_Bones)
-[Pluto - a simple operating system](https://github.com/ZystemOS/pluto)
-[Zen - experimental operating system](https://github.com/AndreaOrru/zen)
+- [OSdev - Zig bare bones](https://wiki.osdev.org/Zig_Bare_Bones)
+- [Pluto - a simple operating system](https://github.com/ZystemOS/pluto)
+- [Zen - experimental operating system](https://github.com/AndreaOrru/zen)
