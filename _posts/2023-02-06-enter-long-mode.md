@@ -20,7 +20,8 @@ After looking different sites on the internet we found some interesting stuff ar
 implementation. It provides the ability to directly run on hardware, remove the
 need of the standard library, defined the entry point of your program, etc...
 In a post from Andrew Kelley called [Using Zig to Provide Stack Traces on Kernel Panic
-for a Bare Bones Operating System](https://andrewkelley.me/post/zig-stack-traces-kernel-panic-bare-bones-os.html) it explains that with *Zig* we have the possibility to create our
+for a Bare Bones Operating System](https://andrewkelley.me/post/zig-stack-traces-kernel-panic-bare-bones-os.html)
+he explains that with *Zig* we have the possibility to create our
 own panic handler. It could be cool to add that in the early steps of the developpement
 of our kernel to see what happens.
 
@@ -28,12 +29,14 @@ To play with *zig* we followed the [Bare Bones tutorial](https://wiki.osdev.org/
 but instead of writing it in *C* we will wrote it in *Zig*. And we should not be stuck because
 it already exists... see links below.
 
-So the first steps was to be able to boot our new operating system (tiny mini one)
-[ZigOS](https://github.com/gthvn1/yet-another-kernel/tree/master/zigos) from grub. We
-already do that in assembly. Then we write the banner to the screen. Once done the next
-really cool new stuff will be the setup of the long mode. Code is avalaible on
-[ZigOS](https://github.com/gthvn1/yet-another-kernel/tree/master/zigos) and for specific
-parts like setting the page table we will post dedicated blog posts...
+So the first steps was to be able to boot our tiny little thing that can hardly be called
+an operating system [ZigOS](https://github.com/gthvn1/yet-another-kernel/tree/master/zigos)
+from grub. We already do that in assembly. Then we write the banner to the screen. Once done
+the next really cool new stuff will be the setup of the long mode (*IDT*, *paging*,...).
+Code is avalaible on [ZigOS](https://github.com/gthvn1/yet-another-kernel/tree/master/zigos)
+and we only update the [Readme file](https://github.com/gthvn1/yet-another-kernel/blob/master/zigos/Readme.md).
+But for specific parts like setting the interrupts, the page table, the panic handler, etc...
+we will post a dedicated blog...
 
 ## Links
 
