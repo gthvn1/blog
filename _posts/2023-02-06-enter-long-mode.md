@@ -1,4 +1,4 @@
---
+---
 title: "Enter long mode"
 categories:
   - Blog
