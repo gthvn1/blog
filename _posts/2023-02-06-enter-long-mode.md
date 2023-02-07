@@ -30,13 +30,13 @@ but instead of writing it in *C* we will wrote it in *Zig*. And we should not be
 it already exists... see links below.
 
 So the first steps was to be able to boot our tiny little thing that can hardly be called
-an operating system [ZigOS](https://github.com/gthvn1/yet-another-kernel/tree/master/zigos)
-from grub. We already do that in assembly. Then we write the banner to the screen. Once done
+an operating system [ZigOS](https://github.com/gthvn1/zigos) from grub.
+We already did that in assembly. Then we write the banner to the screen. Once done
 the next really cool new stuff will be the setup of the long mode (*IDT*, *paging*,...).
-Code is avalaible on [ZigOS](https://github.com/gthvn1/yet-another-kernel/tree/master/zigos)
-and we only update the [Readme file](https://github.com/gthvn1/yet-another-kernel/blob/master/zigos/Readme.md).
+Code is avalaible on [ZigOS](https://github.com/gthvn1/zigos) and we only update the
+[Readme file](https://github.com/gthvn1/zigos/blob/master/Readme.md).
 But for specific parts like setting the interrupts, the page table, the panic handler, etc...
-we will post a dedicated blog...
+we will post dedicated blogs...
 
 ## Links
 
