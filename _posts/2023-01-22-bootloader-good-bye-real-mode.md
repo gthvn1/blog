@@ -39,5 +39,3 @@ Before switching to protected mode we need to add an segment descriptor for the
 code and another one for the data. It is also important to note that the first
 entry must be a null descriptor. Once the GDT is configured we can switch to
 protected mode.
-
-It is implemented in the [hello world bootloader](https://github.com/gthvn1/yet-another-kernel/blob/main/bootloader/boot.asm).
