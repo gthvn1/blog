@@ -4,6 +4,7 @@ categories:
   - Blog
 tags:
   - bootloader
+  - assembly
 pin: true
 ---
 
