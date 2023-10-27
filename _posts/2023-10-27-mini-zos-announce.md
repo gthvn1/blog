@@ -6,6 +6,7 @@ tags:
   - zig
   - unikernel
   - xen
+pin: true
 ---
 
 ## What is the goal of this project?
