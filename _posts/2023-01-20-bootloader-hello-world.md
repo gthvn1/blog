@@ -5,7 +5,6 @@ categories:
 tags:
   - bootloader
   - assembly
-pin: true
 ---
 
 ## The Hello World bootloader
@@ -22,7 +21,7 @@ You will find the classical
 To build it you will need a compiler like **nasm**. The following command can be used:
 - `nasm boot.asm -f bin -o boot.bin`
 
-This will generate a binary file that can be used as a boot device. In the first 512 bytes there 
+This will generate a binary file that can be used as a boot device. In the first 512 bytes there
 is the boot loader. It is usable under qemu:
 - `qemu-system-i386 -drive format=raw,file=boot.bin`
 
@@ -49,7 +48,7 @@ Breakpoint 1, 0x00007c00 in ?? ()
    0x7c09:	je     0x7c0f
    0x7c0b:	int    0x10
    0x7c0d:	jmp    0x7c06
-   0x7c0f:	hlt    
+   0x7c0f:	hlt
    0x7c10:	dec    eax
    0x7c11:	gs ins BYTE PTR es:[edi],dx
 (gdb) x/s 0x7c10
