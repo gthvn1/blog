@@ -1,0 +1,5 @@
+- This blog is using [mkdocs](https://www.mkdocs.org)
+- Created using: `mkdocs new my-blog`
+- Run locally using: `cd my-blog && mkdocs serve`
+- Build using: `cd my-blog && mkdocs build`
+    - It generates a directory `my-blog/site`
