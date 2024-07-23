@@ -3,3 +3,4 @@
 - Run locally using: `cd my-blog && mkdocs serve`
 - Build using: `cd my-blog && mkdocs build`
     - It generates a directory `my-blog/site`
+    - Then just move it into `/docs`
