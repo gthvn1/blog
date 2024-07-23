@@ -1,8 +1,9 @@
 # Comment définir un logiciel libre...
 
-Nous nous appuerons sur les paroles de [Richard Stallman](https://stallman.org/), le fondateur du mouvement 
-du logiciel libre, qui définit un logiciel libre comme étant un logiciel qui respecte la liberté des utilisateurs.
-Selon lui, un logiciel est libre si ses utilisateurs ont les quatre libertés essentielles suivantes :
+Nous nous appuierons sur les paroles de [Richard Stallman](https://stallman.org/), le
+fondateur du mouvement du logiciel libre, qui définit un logiciel libre comme étant
+un logiciel qui respecte la liberté des utilisateurs. Selon lui, un logiciel est
+libre si ses utilisateurs ont les quatre libertés essentielles suivantes :
 
 1. **Liberté d'exécuter le programme comme vous le souhaitez, pour n'importe quel usage (liberté 0)**.
    - Cela signifie que vous pouvez utiliser le programme à n'importe quelle fin, sans restriction.
