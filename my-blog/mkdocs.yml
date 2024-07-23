@@ -3,6 +3,7 @@ site_url: https://www.thouvenin.eu/blog
 repo_url: https://github.com/gthvn1/blog
 plugins:
   - search
+  - tags
   - blog:
       blog_toc: true
 theme:
