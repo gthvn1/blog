@@ -1,4 +1,6 @@
 site_name: Blog
+site_url: https://www.thouvenin.eu/blog
+repo_url: https://github.com/gthvn1/blog
 nav:
   - Home: index.md
   - About: about.md
