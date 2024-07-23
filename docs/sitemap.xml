@@ -6,7 +6,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.thouvenin.eu/blog/about/</loc>
+         <loc>https://www.thouvenin.eu/blog/definition/</loc>
+         <lastmod>2024-07-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.thouvenin.eu/blog/liens/</loc>
          <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -16,12 +21,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.thouvenin.eu/blog/blog/2024/07/23/here-is-a-first-example/</loc>
-         <lastmod>2024-07-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.thouvenin.eu/blog/blog/2024/07/23/second-one/</loc>
+         <loc>https://www.thouvenin.eu/blog/blog/2024/07/23/comment-d%C3%A9finir-un-logiciel-libre/</loc>
          <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
