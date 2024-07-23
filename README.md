@@ -1,4 +1,4 @@
-# Installation
+# Installing
 - This blog is using [mkdocs](https://www.mkdocs.org)
   - install: `pip install mkdocs`
   - using material theme: `pip install mkdocs-material`
@@ -10,7 +10,7 @@
 # Building
 - Build using: `cd my-blog && mkdocs build`
 
-# Installing
+# Deploying
 - Install running: `deploy.sh`
   - It generates a directory `my-blog/site`
   - It removes the current `/docs`
