@@ -15,4 +15,19 @@
          <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://www.thouvenin.eu/blog/blog/2024/07/23/here-is-a-first-example/</loc>
+         <lastmod>2024-07-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.thouvenin.eu/blog/blog/2024/07/23/second-one/</loc>
+         <lastmod>2024-07-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.thouvenin.eu/blog/blog/archive/2024/</loc>
+         <lastmod>2024-07-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
