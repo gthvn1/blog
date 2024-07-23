@@ -10,6 +10,8 @@ theme:
   name: material
   features:
     - navigation.indexes
+    - toc.follow
+    - toc.integrate
 nav:
   - Home: index.md
   - Blog:
