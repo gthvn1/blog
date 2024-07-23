@@ -15,6 +15,7 @@ theme:
     - toc.integrate
 nav:
   - Home: index.md
+  - Definition: definition.md
   - Blog:
     - blog/index.md
-  - About: about.md
+  - Liens: liens.md
