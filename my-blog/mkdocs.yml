@@ -12,6 +12,16 @@ theme:
   name: material
   logo: assets/logo.png
   favicon: assets/logo.png
+  palette:
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
     - navigation.indexes
     - toc.follow
