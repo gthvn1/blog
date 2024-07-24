@@ -15,6 +15,7 @@ theme:
   palette:
     - scheme: slate
       primary: teal
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
