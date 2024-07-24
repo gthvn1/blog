@@ -4,7 +4,8 @@ repo_url: https://github.com/gthvn1/blog
 repo_name: github.com/gthvn1/blog
 plugins:
   - search
-  - tags
+  - tags:
+      tags_file: tags.md
   - blog:
       blog_toc: true
 theme:
@@ -18,4 +19,5 @@ nav:
   - Definition: definition.md
   - Blog:
     - blog/index.md
+    - tags.md
   - Liens: liens.md
