@@ -7,9 +7,9 @@ tags:
 
 # Richard Stallman
 
-**Nom complet** : Richard Matthew Stallman
-**Date de naissance** : 16 mars 1953
-**Lieu de naissance** : Manhattan, New York, États-Unis
+- **Nom complet** : Richard Matthew Stallman
+- **Date de naissance** : 16 mars 1953
+- **Lieu de naissance** : Manhattan, New York, États-Unis
 
 ## Biographie
 

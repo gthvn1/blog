@@ -7,11 +7,11 @@ tags:
 
 # Aaron Swartz
 
-**Nom complet** : Aaron Hillel Swartz
-**Date de naissance** : 8 novembre 1986
-**Lieu de naissance** : Chicago, Illinois, États-Unis
-**Date de décès** : 11 janvier 2013
-**Lieu de décès** : New York, New York, États-Unis
+- **Nom complet** : Aaron Hillel Swartz
+- **Date de naissance** : 8 novembre 1986
+- **Lieu de naissance** : Chicago, Illinois, États-Unis
+- **Date de décès** : 11 janvier 2013
+- **Lieu de décès** : New York, New York, États-Unis
 
 ## Biographie
 
