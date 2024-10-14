@@ -1,4 +1,4 @@
-site_name: Vos Données, Votre Contrôle
+site_name: Xen & Storage
 site_url: https://www.thouvenin.eu/blog
 repo_url: https://github.com/gthvn1/blog
 repo_name: github.com/gthvn1/blog
@@ -14,8 +14,8 @@ theme:
   favicon: assets/logo.png
   palette:
     - scheme: slate
-      primary: teal
-      accent: teal
+      primary: lime
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -29,8 +29,7 @@ theme:
     - toc.integrate
 nav:
   - Home: index.md
-  - Definition: definition.md
   - Blog:
     - blog/index.md
     - tags.md
-  - Liens: liens.md
+  - Links: links.md
