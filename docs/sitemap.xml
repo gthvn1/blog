@@ -2,42 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.thouvenin.eu/blog/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://www.thouvenin.eu/blog/definition/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.thouvenin.eu/blog/liens/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://www.thouvenin.eu/blog/links/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://www.thouvenin.eu/blog/blog/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://www.thouvenin.eu/blog/blog/2024/07/24/aaron-swartz/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.thouvenin.eu/blog/blog/2024/07/24/richard-stallman/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://www.thouvenin.eu/blog/blog/2024/10/14/vhd-file-is-limited-to-2to/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://www.thouvenin.eu/blog/blog/archive/2024/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://www.thouvenin.eu/blog/tags/</loc>
-         <lastmod>2024-07-24</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
 </urlset>
