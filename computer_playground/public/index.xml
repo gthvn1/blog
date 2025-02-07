@@ -6,8 +6,15 @@
     <description>Recent content on Computer Playground</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2025 16:36:58 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2025 20:48:05 +0100</lastBuildDate>
     <atom:link href="https://gthvn1.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Second Post</title>
+      <link>https://gthvn1.github.io/blog/posts/my-second-post/</link>
+      <pubDate>Fri, 07 Feb 2025 20:48:05 +0100</pubDate>
+      <guid>https://gthvn1.github.io/blog/posts/my-second-post/</guid>
+      <description>&lt;h1 id=&#34;second-post&#34;&gt;Second post&lt;/h1&gt;&#xA;&lt;p&gt;It is so easy to create a new post&amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>https://gthvn1.github.io/blog/posts/my-first-post/</link>
