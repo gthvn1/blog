@@ -1,4 +1,4 @@
 baseURL = 'https://gthvn1.github.io/blog'
 languageCode = 'en-us'
 title = 'Computer Playground'
-theme = 'ananke'
+theme = "terminal"

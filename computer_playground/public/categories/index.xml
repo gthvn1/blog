@@ -4,8 +4,7 @@
     <title>Categories on Computer Playground</title>
     <link>https://gthvn1.github.io/blog/categories/</link>
     <description>Recent content in Categories on Computer Playground</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://gthvn1.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://gthvn1.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

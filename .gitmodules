@@ -1,3 +1,6 @@
 [submodule "computer_playground/themes/ananke"]
 	path = computer_playground/themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "computer_playground/themes/terminal"]
+	path = computer_playground/themes/terminal
+	url = https://github.com/panr/hugo-theme-terminal.git
