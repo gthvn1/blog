@@ -19,33 +19,27 @@ API in [The definitive KVM API](https://www.kernel.org/doc/html/latest/virt/kvm/
 # Get API version
 
 The first check will be the API. The interaction with KVM is mostly done using ioctl. The
-device used is generally */dev/kvm*. Here is our first test:
-```c
-#include <sys/ioctl.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdio.h>
+device used is generally */dev/kvm*. Here is our first test (for fun let's try [Zig](https://ziglang.org/)):
+```zig
+const std = @import("std");
+const linux = std.os.linux;
 
-#include <linux/kvm.h>
+pub fn main() void {
+    const dev_kvm = "/dev/kvm";
+    const flags = linux.O{
+        .ACCMODE = .RDWR,
+        .CLOEXEC = true,
+    };
 
-int kvm_get_api_version(const char *device_path) {
-    int fd = open(device_path, O_RDWR);
-    if (fd < 0) {
-        perror("open");
-        return -1;
-    }
-    int version = ioctl(fd, KVM_GET_API_VERSION, 0);
-    if (version < 0) {
-        perror("ioctl");
-    }
-    close(fd);
-    return version;
-}
+    const fd: i32 = @intCast(linux.open(dev_kvm, flags, 0));
+    defer _ = linux.close(fd);
 
-int main() {
-  int ver = kvm_get_api_version("/dev/kvm");
-  printf("Ver %d\n", ver);
-  return 0;
+    // KVM_GET_API_VERSION is usually defined as _IO(0xAE, 0x00), which is 0xAE00
+    const KVM_GET_API_VERSION: u32 = 0xAE00;
+
+    const version = linux.ioctl(fd, KVM_GET_API_VERSION, 0);
+
+    std.debug.print("KVM API version: {}\n", .{version});
 }
 ```
 
