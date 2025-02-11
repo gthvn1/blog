@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.143.1"><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   
-    <title>Computer Playground</title>
+    <title>Mirageos Part1 :: Computer Playground</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta name="description" content="Here is my view about the stack used by MirageOS:
+Hypervisor Layer (e.g., KVM):
+At the very bottom, we have an hypervisor. When using KVM, the Linux kernel&rsquo;s KVM module provides virtualization support (managing things like VM exits and entries). Solo5:
+Solo5 sits just above the hypervisor. It&rsquo;s a minimal execution environment (or &ldquo;unikernel monitor&rdquo;) that abstracts hypervisor details. It provides a simple API (often implemented using ioctls in the KVM case) for handling I/O and other operations required by the unikernel, without all the overhead of a full OS. ocaml-solo5:
+" />
+<meta name="keywords" content=", " />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/blog/" />
+<link rel="canonical" href="http://localhost:1313/blog/posts/mirageos-part1/" />
 
 
 
@@ -75,22 +78,28 @@
 
 
 <meta property="og:locale" content="en" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Computer Playground">
-<meta property="og:description" content="" />
-<meta property="og:url" content="http://localhost:1313/blog/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Mirageos Part1">
+<meta property="og:description" content="Here is my view about the stack used by MirageOS:
+Hypervisor Layer (e.g., KVM):
+At the very bottom, we have an hypervisor. When using KVM, the Linux kernel&rsquo;s KVM module provides virtualization support (managing things like VM exits and entries). Solo5:
+Solo5 sits just above the hypervisor. It&rsquo;s a minimal execution environment (or &ldquo;unikernel monitor&rdquo;) that abstracts hypervisor details. It provides a simple API (often implemented using ioctls in the KVM case) for handling I/O and other operations required by the unikernel, without all the overhead of a full OS. ocaml-solo5:
+" />
+<meta property="og:url" content="http://localhost:1313/blog/posts/mirageos-part1/" />
 <meta property="og:site_name" content="Computer Playground" />
 
-  <meta property="og:image" content="http://localhost:1313/blog/og-image.png">
+  
+  
+  <meta property="og:image" content="http://localhost:1313/blog/">
 
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 
 
+  <meta property="article:published_time" content="2025-02-11 11:36:00 &#43;0100 CET" />
 
 
 
-  <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="Computer Playground" />
 
 
 
@@ -125,43 +134,30 @@
 
   <div class="content">
     
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/blog/posts/mirageos-part1/">Mirageos Part1</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-02-11</time></div>
+
   
-  <div class="posts">
-    
-    
-
-    
-    
+    <span class="post-tags">
       
-    
-    
-
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="http://localhost:1313/blog/posts/mirageos-part1/">Mirageos Part1</a>
-        </h2>
-
-        <div class="post-meta"><time class="post-date">2025-02-11</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="http://localhost:1313/blog/tags/ocaml/">ocaml</a>&nbsp;
-            
-            #<a href="http://localhost:1313/blog/tags/unikernel/">unikernel</a>&nbsp;
-            
-            #<a href="http://localhost:1313/blog/tags/mirageos/">mirageos</a>&nbsp;
-            
-          </span>
-        
-
-        
+      #<a href="http://localhost:1313/blog/tags/ocaml/">ocaml</a>&nbsp;
+      
+      #<a href="http://localhost:1313/blog/tags/unikernel/">unikernel</a>&nbsp;
+      
+      #<a href="http://localhost:1313/blog/tags/mirageos/">mirageos</a>&nbsp;
+      
+    </span>
+  
+  
 
 
-        <div class="post-content">
-          
-            <p>Here is my view about the stack used by <a href="https://github.com/mirage">MirageOS</a>:</p>
+  
+
+  <div class="post-content"><div>
+        <p>Here is my view about the stack used by <a href="https://github.com/mirage">MirageOS</a>:</p>
 <ol>
 <li>
 <p><strong>Hypervisor Layer (e.g., KVM):</strong></p>
@@ -181,78 +177,40 @@ and other operations required by the unikernel, without all the overhead of a fu
 </li>
 <li>
 <p><strong>ocaml-solo5:</strong></p>
-          
-        </div>
+<ul>
+<li>This is a port of the OCaml runtime to run on top of Solo5.</li>
+<li>It&rsquo;s a very stripped-down version of the OCaml runtime that includes only what&rsquo;s needed
+for a unikernel, making it lightweight.</li>
+</ul>
+</li>
+<li>
+<p><strong>MirageOS:</strong></p>
+<ul>
+<li>MirageOS is a library operating system (often called a unikernel) written in OCaml. It
+leverages ocaml-solo5 (or other backends, like Xen) to build a specialized, self-contained
+VM image.</li>
+<li>Rather than being a traditional microkernel, MirageOS packages up only the minimal &ldquo;kernel&rdquo;
+components (drivers, network stacks, etc.) that application requires—all written in OCaml.</li>
+</ul>
+</li>
+</ol>
+<p>So my current understanding of the Solo5-based MirageOS stack is:</p>
+<ul>
+<li><strong>KVM (or another hypervisor)</strong> provides the virtualization hardware support.</li>
+<li><strong>Solo5</strong> is the lightweight runtime that interfaces with the hypervisor.</li>
+<li><strong>ocaml-solo5</strong> brings in the OCaml runtime, optimized for this minimal environment.</li>
+<li><strong>MirageOS</strong> is built on top of that, assembling the libraries and drivers into a complete unikernel.</li>
+</ul>
 
-        
-          <div>
-            <a class="read-more button inline" href="/blog/posts/mirageos-part1/"></a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="http://localhost:1313/blog/posts/my-second-post/">My Second Post</a>
-        </h2>
+      </div></div>
 
-        <div class="post-meta"><time class="post-date">2025-02-07</time></div>
+  
 
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <h1 id="second-post">Second post</h1>
-<p>It is so easy to create a new post&hellip;</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/blog/posts/my-second-post/"></a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="http://localhost:1313/blog/posts/my-first-post/">My First Post</a>
-        </h2>
-
-        <div class="post-meta"><time class="post-date">2025-02-07</time></div>
-
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <h2 id="introduction">Introduction</h2>
-<p>This is <strong>bold</strong> text, and this is <em>emphasized</em> text.</p>
-<p>Visit the <a href="https://gohugo.io">Hugo</a> website!</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/blog/posts/my-first-post/"></a>
-          </div>
-        
-      </article>
+  
     
 
-    <div class="pagination">
-  <div class="pagination__buttons">
-    
-    
-  </div>
-</div>
-
-  </div>
+  
+</article>
 
   </div>
 

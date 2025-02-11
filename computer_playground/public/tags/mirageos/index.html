@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
   
-    <title>404 Page not found :: Computer Playground</title>
+    <title>Mirageos :: Computer Playground</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/blog/404.html" />
+<link rel="canonical" href="http://localhost:1313/blog/tags/mirageos/" />
 
 
 
@@ -75,9 +75,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="404 Page not found">
+<meta property="og:title" content="Mirageos">
 <meta property="og:description" content="" />
-<meta property="og:url" content="http://localhost:1313/blog/404.html" />
+<meta property="og:url" content="http://localhost:1313/blog/tags/mirageos/" />
 <meta property="og:site_name" content="Computer Playground" />
 
   <meta property="og:image" content="http://localhost:1313/blog/og-image.png">
@@ -88,6 +88,8 @@
 
 
 
+
+  <link href="/blog/tags/mirageos/index.xml" rel="alternate" type="application/rss+xml" title="Computer Playground" />
 
 
 
@@ -122,12 +124,70 @@
 
   <div class="content">
     
-  <div class="post">
-    <h1 class="post-title">404 — Page not found...</h1>
+  <h1>Posts for: #Mirageos</h1>
+  
+  <div class="posts">
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="http://localhost:1313/blog/posts/mirageos-part1/">Mirageos Part1</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2025-02-11</time></div>
 
-    <div class="post-content">
-      <a href="http://localhost:1313/">Back to home page&nbsp;→</a>
-    </div>
+        
+          <span class="post-tags">
+            
+            #<a href="http://localhost:1313/blog/tags/ocaml/">ocaml</a>&nbsp;
+            
+            #<a href="http://localhost:1313/blog/tags/unikernel/">unikernel</a>&nbsp;
+            
+            #<a href="http://localhost:1313/blog/tags/mirageos/">mirageos</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <p>Here is my view about the stack used by <a href="https://github.com/mirage">MirageOS</a>:</p>
+<ol>
+<li>
+<p><strong>Hypervisor Layer (e.g., KVM):</strong></p>
+<ul>
+<li>At the very bottom, we have an hypervisor. When using KVM, the Linux kernel&rsquo;s KVM module
+provides virtualization support (managing things like VM exits and entries).</li>
+</ul>
+</li>
+<li>
+<p><strong>Solo5:</strong></p>
+<ul>
+<li>Solo5 sits just above the hypervisor. It&rsquo;s a minimal execution environment (or &ldquo;unikernel
+monitor&rdquo;) that abstracts hypervisor details.</li>
+<li>It provides a simple API (often implemented using ioctls in the KVM case) for handling I/O
+and other operations required by the unikernel, without all the overhead of a full OS.</li>
+</ul>
+</li>
+<li>
+<p><strong>ocaml-solo5:</strong></p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/blog/posts/mirageos-part1/"></a>
+          </div>
+        
+      </article>
+    
+
+    <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+  </div>
+</div>
 
   </div>
 

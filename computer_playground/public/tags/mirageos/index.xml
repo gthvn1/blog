@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Computer Playground</title>
-    <link>http://localhost:1313/blog/posts/</link>
-    <description>Recent content in Posts on Computer Playground</description>
+    <title>Mirageos on Computer Playground</title>
+    <link>http://localhost:1313/blog/tags/mirageos/</link>
+    <description>Recent content in Mirageos on Computer Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2025 11:36:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 11:36:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/mirageos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mirageos Part1</title>
       <link>http://localhost:1313/blog/posts/mirageos-part1/</link>
@@ -77,34 +77,6 @@ components (drivers, network stacks, etc.) that application requires—all writt
 &lt;li&gt;&lt;strong&gt;ocaml-solo5&lt;/strong&gt; brings in the OCaml runtime, optimized for this minimal environment.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;MirageOS&lt;/strong&gt; is built on top of that, assembling the libraries and drivers into a complete unikernel.&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>My Second Post</title>
-      <link>http://localhost:1313/blog/posts/my-second-post/</link>
-      <pubDate>Fri, 07 Feb 2025 20:48:05 +0100</pubDate>
-      
-      <guid>http://localhost:1313/blog/posts/my-second-post/</guid>
-      <description>&lt;h1 id=&#34;second-post&#34;&gt;Second post&lt;/h1&gt;
-&lt;p&gt;It is so easy to create a new post&amp;hellip;&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;second-post&#34;&gt;Second post&lt;/h1&gt;
-&lt;p&gt;It is so easy to create a new post&amp;hellip;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/blog/posts/my-first-post/</link>
-      <pubDate>Fri, 07 Feb 2025 16:36:58 +0100</pubDate>
-      
-      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
-&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;</description>
-      <content>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
-&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;
 </content>
     </item>
     
