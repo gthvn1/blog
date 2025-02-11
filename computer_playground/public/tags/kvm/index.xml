@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mirageos on Computer Playground</title>
-    <link>https://gthvn1.github.io/blog/tags/mirageos/</link>
-    <description>Recent content in Mirageos on Computer Playground</description>
+    <title>Kvm on Computer Playground</title>
+    <link>https://gthvn1.github.io/blog/tags/kvm/</link>
+    <description>Recent content in Kvm on Computer Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2025 13:14:49 +0100</lastBuildDate><atom:link href="https://gthvn1.github.io/blog/tags/mirageos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 13:14:49 +0100</lastBuildDate><atom:link href="https://gthvn1.github.io/blog/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mirageos Part2</title>
       <link>https://gthvn1.github.io/blog/posts/mirageos-part2/</link>
@@ -77,79 +77,6 @@ device used is generally &lt;em&gt;/dev/kvm&lt;/em&gt;. Here is our first test:&
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If everything goes well you should see &lt;code&gt;12&lt;/code&gt; as the current version.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Mirageos Part1</title>
-      <link>https://gthvn1.github.io/blog/posts/mirageos-part1/</link>
-      <pubDate>Tue, 11 Feb 2025 11:36:00 +0100</pubDate>
-      
-      <guid>https://gthvn1.github.io/blog/posts/mirageos-part1/</guid>
-      <description>&lt;p&gt;Here is my view about the stack used by &lt;a href=&#34;https://github.com/mirage&#34;&gt;MirageOS&lt;/a&gt;:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Hypervisor Layer (e.g., KVM):&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;At the very bottom, we have an hypervisor. When using KVM, the Linux kernel&amp;rsquo;s KVM module
-provides virtualization support (managing things like VM exits and entries).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Solo5:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Solo5 sits just above the hypervisor. It&amp;rsquo;s a minimal execution environment (or &amp;ldquo;unikernel
-monitor&amp;rdquo;) that abstracts hypervisor details.&lt;/li&gt;
-&lt;li&gt;It provides a simple API (often implemented using ioctls in the KVM case) for handling I/O
-and other operations required by the unikernel, without all the overhead of a full OS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;ocaml-solo5:&lt;/strong&gt;&lt;/p&gt;</description>
-      <content>&lt;p&gt;Here is my view about the stack used by &lt;a href=&#34;https://github.com/mirage&#34;&gt;MirageOS&lt;/a&gt;:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Hypervisor Layer (e.g., KVM):&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;At the very bottom, we have an hypervisor. When using KVM, the Linux kernel&amp;rsquo;s KVM module
-provides virtualization support (managing things like VM exits and entries).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Solo5:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Solo5 sits just above the hypervisor. It&amp;rsquo;s a minimal execution environment (or &amp;ldquo;unikernel
-monitor&amp;rdquo;) that abstracts hypervisor details.&lt;/li&gt;
-&lt;li&gt;It provides a simple API (often implemented using ioctls in the KVM case) for handling I/O
-and other operations required by the unikernel, without all the overhead of a full OS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;ocaml-solo5:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;This is a port of the OCaml runtime to run on top of Solo5.&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s a very stripped-down version of the OCaml runtime that includes only what&amp;rsquo;s needed
-for a unikernel, making it lightweight.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;MirageOS:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;MirageOS is a library operating system (often called a unikernel) written in OCaml. It
-leverages ocaml-solo5 (or other backends, like Xen) to build a specialized, self-contained
-VM image.&lt;/li&gt;
-&lt;li&gt;Rather than being a traditional microkernel, MirageOS packages up only the minimal &amp;ldquo;kernel&amp;rdquo;
-components (drivers, network stacks, etc.) that application requires—all written in OCaml.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;So my current understanding of the Solo5-based MirageOS stack is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;KVM (or another hypervisor)&lt;/strong&gt; provides the virtualization hardware support.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Solo5&lt;/strong&gt; is the lightweight runtime that interfaces with the hypervisor.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ocaml-solo5&lt;/strong&gt; brings in the OCaml runtime, optimized for this minimal environment.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MirageOS&lt;/strong&gt; is built on top of that, assembling the libraries and drivers into a complete unikernel.&lt;/li&gt;
-&lt;/ul&gt;
 </content>
     </item>
     
