@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Computer Playground</title>
-    <link>http://localhost:1313/blog/tags/</link>
+    <link>https://gthvn1.github.io/blog/tags/</link>
     <description>Recent content in Tags on Computer Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2025 11:36:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 11:36:00 +0100</lastBuildDate><atom:link href="https://gthvn1.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mirageos</title>
-      <link>http://localhost:1313/blog/tags/mirageos/</link>
+      <link>https://gthvn1.github.io/blog/tags/mirageos/</link>
       <pubDate>Tue, 11 Feb 2025 11:36:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/blog/tags/mirageos/</guid>
+      <guid>https://gthvn1.github.io/blog/tags/mirageos/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Ocaml</title>
-      <link>http://localhost:1313/blog/tags/ocaml/</link>
+      <link>https://gthvn1.github.io/blog/tags/ocaml/</link>
       <pubDate>Tue, 11 Feb 2025 11:36:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/blog/tags/ocaml/</guid>
+      <guid>https://gthvn1.github.io/blog/tags/ocaml/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Unikernel</title>
-      <link>http://localhost:1313/blog/tags/unikernel/</link>
+      <link>https://gthvn1.github.io/blog/tags/unikernel/</link>
       <pubDate>Tue, 11 Feb 2025 11:36:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/blog/tags/unikernel/</guid>
+      <guid>https://gthvn1.github.io/blog/tags/unikernel/</guid>
       <description></description>
       <content></content>
     </item>

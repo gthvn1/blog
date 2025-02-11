@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unikernel on Computer Playground</title>
-    <link>http://localhost:1313/blog/tags/unikernel/</link>
+    <link>https://gthvn1.github.io/blog/tags/unikernel/</link>
     <description>Recent content in Unikernel on Computer Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2025 11:36:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/unikernel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Feb 2025 11:36:00 +0100</lastBuildDate><atom:link href="https://gthvn1.github.io/blog/tags/unikernel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mirageos Part1</title>
-      <link>http://localhost:1313/blog/posts/mirageos-part1/</link>
+      <link>https://gthvn1.github.io/blog/posts/mirageos-part1/</link>
       <pubDate>Tue, 11 Feb 2025 11:36:00 +0100</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/mirageos-part1/</guid>
+      <guid>https://gthvn1.github.io/blog/posts/mirageos-part1/</guid>
       <description>&lt;p&gt;Here is my view about the stack used by &lt;a href=&#34;https://github.com/mirage&#34;&gt;MirageOS&lt;/a&gt;:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
